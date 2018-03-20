@@ -1,0 +1,419 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<!-- Assessing English skills before reading abstracts-->
+
+<div class="english_skills">
+  
+  <cml:radios label="What is your professional field?" name="profession" class="check"  aggregation="agg">
+
+    <cml:radio label="economics" value="economics"></cml:radio>
+    <cml:radio label="education" value="education"></cml:radio>
+    <cml:radio label="humanities/liberal arts" value="humanities"></cml:radio>
+    <cml:radio label="law" value="law"></cml:radio>
+    <cml:radio label="natural science" value="science"></cml:radio>
+    <cml:radio label="other" value="other"></cml:radio>
+  </cml:radios>
+  <cml:text label="" name="other_profession" only-if="profession:[other]" value="your profession" aggregation="all"></cml:text>
+  <div class="hr"></div>
+  
+  <label class="row_english_skills"> 
+    <cml:radios label="How would you rate your English language niveau?" class="check" name="how_would_you_rate_your_english_language_niveau" aggregation="agg">
+        
+      <br />
+      <cml:radio label="CEFR: B1 / IELTS: 4 / TOEFL: 42-71" value="b1"></cml:radio>
+      <i class="icon-info-sign b1_tip"></i>
+    
+      <br />
+      <cml:radio label="CEFR: B2 / IELTS: 5-6 / TOEFL:72-94" value="b2"></cml:radio>
+      <i class="icon-info-sign b2_tip"></i>
+
+      <br />
+      <cml:radio label="CEFR: C1 / IELTS: 6.5-7.5 / TOEFL:95 or above" value="c1"></cml:radio>
+      <i class="icon-info-sign c1_tip"></i>
+
+      <br />
+      <cml:radio label="CEFR: C2 / IELTS 8-9" value="c2"></cml:radio>
+      <i class="icon-info-sign c2_tip"></i>
+
+    </cml:radios>
+  </label>
+  
+
+  <!-- English skill test questions-->
+ 
+  <div class="hr"></div>
+
+  <p>
+    <img src="https://s3.amazonaws.com/crowdflower-make-cloud/images%2F1517853617705-question1.png" style="width: 405x; height: 158.144px;" class="fr-fic fr-dib fr-fil" />
+
+    <cml:radios label="Why is the HR department sending this email?"  class="check" name="why_is_the_hr_department_sending_this_email" aggregation="agg">
+      <cml:radio label="to ask staff for some information." value="to_ask_staff_for_some_information"></cml:radio>
+      <cml:radio label="to explain how something is done." value="to_explain_how_something_is_done" class="right"></cml:radio>
+      <cml:radio label="to tell managers about a problem." value="to_tell_managers_about_a_problem"></cml:radio>
+    </cml:radios>
+  </p>
+  
+  <div class="hr"></div>
+  
+  <p>
+    <img src="https://s3.amazonaws.com/crowdflower-make-cloud/images%2F1517853702011-question2.png" style="width: 407px; height: 124.813px;" class="fr-fic fr-dib fr-fil" />
+  
+    <cml:radios label="Finefoods requires an agent to"  class="check" name="finefoods_requires_an_agent_to" aggregation="agg">
+      <cml:radio label="own a suitable vehicle for delivery." value="own_a_suitable_vehicle_for_delivery"></cml:radio>
+      <cml:radio label="be a specialist in food distribution." value="be_a_specialist_in_food_distribution"></cml:radio>
+      <cml:radio label="deliver goods all over the country." value="deliver_goods_all_over_the_country" class="right"></cml:radio>
+    </cml:radios>
+  </p>
+
+  <div class="hr"></div>
+
+  <p>
+    <img src="https://s3.amazonaws.com/crowdflower-make-cloud/images%2F1517853420471-question4.png" style="width: 418px; height: 165.988px;" class="fr-fic fr-dib fr-fil" />
+    <cml:radios label="Staff should tell Jane Fellows"  class="check" name="staff_should_tell_jane_fellows" aggregation="agg">
+      <cml:radio label="how many people have enrolled for the course." value="how_many_people_have_enrolled_for_the_course"></cml:radio>
+      <cml:radio label="if they are interested in doing the course." value="if_they_are_interested_in_doing_the_course" class="right"></cml:radio>
+      <cml:radio label="which of the courses they have decided to do." value="which_of_the_courses_they_have_decided_to_do"></cml:radio>
+    </cml:radios>
+  </p>
+
+  <div class="hr"></div>
+
+  <p>
+    <img src="https://s3.amazonaws.com/crowdflower-make-cloud/images%2F1517853755721-question3.png" style="width: 438px; height: 102.2px;" class="fr-fic fr-dib fr-fil" />
+    <cml:radios label="Contact Neil Smith if you want to"  class="check" name="contact_neil_smith_if_you_want_to" aggregation="agg">
+      <cml:radio label="obtain information about the company’s prices." value="obtain_information_about_the_companys_prices" class="right"></cml:radio>
+      <cml:radio label="arrange a visit to the showroom." value="arrange_a_visit_to_the_showroom"></cml:radio>
+      <cml:radio label="speak to a representative about special offers." value="speak_to_a_representative_about_special_offers"></cml:radio>
+    </cml:radios>
+  </p>
+  
+  <div class="copyright_test"> test questions © UCLES </div>
+  <br />
+  
+  <!-- including bootstrap for progressbar-->
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%"> 30%
+    </div>
+  </div>
+  
+  <br />
+  
+</div>
+<!-- end class english_skills-->
+
+<div class="row">
+  <div class="col-sm-offset-5 col-sm-2 text-center">
+    <div class="btn-group" data-toggle="buttons">
+      <div class="col-md-4"> 
+        <button type="button" id="submit_english_questions" class="btn btn-primary">continue to actual task</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="all">
+  <!-- everything but english skills -->
+  
+  
+  <!-- Collection of documents-->
+  <div class="abstracts">
+          
+    <table class="abstractsTable">
+      <thead>
+        <tr>
+          <th>
+            <center>
+              <h2>Collection of documents</h2>
+            </center>
+          </th>
+          <th>
+            <center>
+              <h2>Single document</h2>
+            </center>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="collection">
+              <p>{{abstract_0}}</p>
+              <p></p>
+              <p>{{abstract_1}}</p>
+              <p></p>
+              <p>{{abstract_2}}</p>
+            </div>
+          </td>
+          <td>
+            <div class="singleDocument">
+              <p style="text-align: justify;">{{abstract_3}}</p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- end class abstracts -->
+
+
+  <!-- After reading abstracts:-->
+
+  <div class="individual_keywords">
+    <div class="hr2"></div>
+    
+    <cml:radios  label="Please identify whether the topics/themes of the single document is [_________] to the collection." name="please_identify_whether_the_topicsthemes_of_the_single_document_is___________to_the_collection" aggregation="agg">
+      <cml:radio label="similar" value="similar"></cml:radio>
+      <cml:radio label="intermediate (similar in some aspects, but different in others)" value="intermediate"></cml:radio>
+      <cml:radio label="different" value="different"></cml:radio>
+    </cml:radios>
+
+    <div class="hr2"></div>
+
+    <!-- Individual keywords validates=""-->
+
+    <cml:radios label="Please consider keywords or key phrases that describe the semantic commonalities or differences appropriate:" name="please_consider_keywords_or_key_phrases_that_describe_the_semantic_commonalities_or_differences_appropriate" aggregation="agg"></cml:radios>
+    <p>
+      <b>Commonalities: </b>Topics/Themes that the collection and the single document have in common. 
+      <br />
+      <b>Differences: </b>Topics/Themes that aren't covered by the collection ergo are new in the single document.
+      <br />
+    </p>
+    <i class="icon-info-sign input_tip"></i>
+  
+    <br />
+    <table class="keywordsTable">
+      <thead>
+        <tr>
+          <th>Commonalities</th>
+          
+          <th>Differences</th>
+        </tr>
+      </thead>
+      <!-- validates="required alpha minLength:3"-->
+      <tbody>
+        <tr>
+          <td>
+            <cml:text label="" name="prop_sim_one" value="1. keyword for commonality" aggregation="all"></cml:text>
+          </td>
+         
+          <td>
+            <cml:text label="" name="prop_diff_one" value="1. keyword for difference" aggregation="all"></cml:text>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <cml:text label="" name="prop_sim_two" value="2. keyword for commonality" aggregation="all"></cml:text>
+          </td>
+          
+          <td>
+            <cml:text label="" name="prop_diff_two" value="2. keyword for difference" aggregation="all"></cml:text>
+          </td>
+        </tr>
+    
+        <tr>
+          <td>
+            <cml:text label="" name="prop_sim_three" value="3. keyword for commonality" aggregation="all"></cml:text>
+          </td>
+      
+          <td>
+            <cml:text label="" name="prop_diff_three" value="3. keyword for difference" aggregation="all"></cml:text>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <cml:text label="" name="prop_sim_four" value="4. keyword for commonality" aggregation="all"></cml:text>
+          </td>
+      
+          <td>
+            <cml:text label="" name="prop_diff_four" value="4. keyword for difference" aggregation="all"></cml:text>
+          </td>
+        </tr>
+    
+        <tr>
+          <td>
+            <cml:text label="" name="prop_sim_five" value="5. keyword for commonality" aggregation="all"></cml:text>
+          </td>
+         
+          <td>
+            <cml:text label="" name="prop_diff_five" value="5. keyword for difference" aggregation="all"></cml:text>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p></p>
+    <br />
+    
+    <!-- including bootstrap for progressbar-->
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"> 60%
+    </div>
+    </div>
+    <br />
+    <p></p>
+  </div>
+  <!-- end class individual_keywords-->
+  
+  <div class="row">
+    <div class="col-sm-offset-5 col-sm-2 text-center">
+      <div class="btn-group" data-toggle="buttons">
+        <div class="col-md-4 text-center"> 
+          <button type="button" id="submit_individual_keywords" class="btn btn-primary">continue to given keywords</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Generated keywords -->
+  <div class="given_keywords">
+    
+    <div class="hr2"></div>
+  
+     {% if keyword_sim != 'No data available' %}
+    <div class="class_generated_keywords_sim">
+    
+      <div name="generated_keywords_sim" id="generated_keywords_sim">
+
+        <cml:radios label="Please assess if these keywords describe the topics/themes that the collection and the single document have in common appropriate:" name="please_assess_if_these_keywords_describe_the_topicsthemes_that_the_collection_and_the_single_document_have_in_common_appropriate" aggregation="agg"></cml:radios>
+
+        <table class="keywordsTable" id="simKeywords">
+          <thead>
+            <tr>
+              <th></th>
+              <th>relevant</th>
+              <th>not relevant</th>
+              <th>relevant, but needs improvement</th>
+            </tr>
+          </thead>
+          <tbody>
+      
+  {% for generated_keywords_sim in keyword_sim %}
+        
+            <tr>
+              <cml:radios name="generated_keywords_sim" validates="required" value="{{ keyword_sim[forloop.index0] }}" label=""  aggregation="agg">                
+                <td>{{generated_keywords_sim}}</td>
+          
+                <td> 
+                  <cml:radio label="" name="{{generated_keywords_sim}}" value="{{generated_keywords_sim}}_relevant" />
+                </td>
+                <td>
+                  <cml:radio label="" name="{{generated_keywords_sim}}" value="{{generated_keywords_sim}}_notRelevant" />
+                </td>
+                <td>
+                  <cml:radio label="" name="{{generated_keywords_sim}}" value="{{generated_keywords_sim}}_improvement" />
+                  <input type="text" value="improvement for '{{generated_keywords_sim}}'" />
+                </td>
+              </cml:radios>
+            </tr>
+   {% endfor %}
+    
+          </tbody>
+        
+        </table>
+    
+      </div>
+    
+   {% endif %}
+    </div>  
+    <div class="hr2"></div>
+     
+    <!--different keywords -->
+     {% if keyword_dissim != 'No data available' %}
+    <div class="generated_keywords_diff">
+      <div name="generated_keywords_dissim" id="generated_keywords_dissim">
+
+        <cml:radios  label="Please assess if these keywords describe the topics/themes that aren't covered by the collection or are only mentioned in the single document appropriate:" name="please_assess_if_these_keywords_describe_the_topicsthemes_that_arent_covered_by_the_collection_or_are_only_mentioned_in_the_single_document_appropriate" aggregation="agg"></cml:radios>
+
+        <table class="keywordsTable" id="diffKeywords">
+          <thead>
+            <tr>
+              <th></th>
+              <th>relevant</th>
+              <th>not relevant</th>
+              <th>relevant, but needs improvement</th>
+            </tr>
+          </thead>
+          <tbody>
+      
+  {% for generated_keywords_dissim in keyword_dissim %}
+        
+            <tr>
+              <cml:radios name="keyword_radio_6" value="{{ keyword_dissim[forloop.index0] }}" label=""  aggregation="agg">                
+                <td>{{generated_keywords_dissim}}</td>
+          
+                <td> 
+                  <input id="" name="{{generated_keywords_dissim}}" type="radio" value="{{generated_keywords_dissim}}_relevant" />
+                </td>
+                <td>
+                  <input id="" name="{{generated_keywords_dissim}}" type="radio" value="{{generated_keywords_dissim}}_notRelevant" />
+                </td>
+                <td>
+                  <input id="" name="{{generated_keywords_dissim}}" type="radio" value="{{generated_keywords_dissim}}_improvement" />
+                  <input type="text" value="improvement for '{{generated_keywords_dissim}}'" />
+                </td>
+              </cml:radios>
+            </tr>
+      
+   {% endfor %}
+    
+          </tbody>
+        
+        </table>
+      </div>
+      <!-- end dissim -->
+   {% endif %}
+
+
+      <br />
+      <p></p>
+  
+      <!-- including bootstrap for progressbar-->
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"> 90%</div>
+      </div>
+    </div> 
+    <br />
+    <p></p>
+  
+    <div class="row">
+      <div class="col-sm-offset-5 col-sm-2 text-center">
+        <div class="btn-group" data-toggle="buttons">
+          <div class="col-md-4 text-center"> 
+            <button type="button" id="submit_general_keywords" class="btn btn-primary">continue to feedback</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  <!-- Providing feedback-->
+
+  <div class="feedback">
+    <cml:ratings label="Which level of difficulty would you rate our task?" points="5"  from="very easy" to="very hard" name="which_level_of_difficulty_would_you_rate_our_task" aggregation="avg"></cml:ratings>
+    
+    <div class="hr2"></div>
+    
+    <cml:ratings label="How intuitive/well-structured are our task instructions?" points="5"  from="very intuitive" to="not intuitive" name="how_intuitivewellstructured_are_our_task_instructions" aggregation="avg"></cml:ratings>
+    
+    <div class="hr2"></div>
+    
+    <cml:textarea label="Anything you want us to tell about the task" name="anything_you_want_us_to_tell_about_the_task" aggregation="all"></cml:textarea>
+    <p></p>
+ 
+    <h2>
+      <center> Thank you for your work – You may now submit your task!</center>
+    </h2>
+    <p></p>
+    <!-- including bootstrap for progressbar-->
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"> 100%
+    </div>
+    </div>
+  </div>
+  <!-- div end for FEEDBACK -->
+  
+</div>
+
+

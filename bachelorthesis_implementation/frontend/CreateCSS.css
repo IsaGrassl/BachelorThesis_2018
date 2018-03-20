@@ -1,0 +1,87 @@
+.abstractsTable {
+  width: 100%;
+  text-align: justify;
+  border-collapse: separate;
+  border-spacing: 50px 0;
+}
+
+.collection {
+  background-color: #f0f2f5;
+  border-collapse: separate;
+  border-spacing: 15px;
+  border: 1px solid #81858c;
+  padding: 1cm;
+}
+
+.singleDocument {
+  background-color: #f0f2f5;
+  border-collapse: separate;
+  border-spacing: 15px;
+  border: 1px solid #81858c;
+  padding: 1cm;
+}
+
+#all {
+  display: none;
+}
+
+.feedback {
+  display: none;
+}
+
+.class_generated_keywords_sim {
+  display: none;
+}
+
+.generated_keywords_diff {
+  display: none;
+}
+
+.row_english_skills .cml_row {
+  display: inline-block;
+}
+
+.copyright_test {
+  text-align: right;
+  color: #b3b3b8;
+}
+
+.keywordsTable {
+  width: 870px;
+  height: 230px;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 30px 0;
+}
+.keywordsTable td, .keywordsTable th {
+  border: 1px solid #EEF0F5;
+  padding: 7px 3px;
+}
+
+.keywordsTable thead th {
+  font-size: 16px;
+  font-weight: bold;
+  color: #111111;
+  text-align: center;
+  border-bottom: 1px solid #81858c;
+  background: #EEF0F5;
+}
+
+.keywordsTable thead th:first-child {
+  border-left: none;
+}
+
+.row_keyword .cml_row{
+  display: inline-block;
+}
+
+.hr {
+    border-bottom: 2px solid #f0f2f5;
+    margin-bottom:9mm;
+}
+
+.hr2 {
+    border-bottom: 2px solid #f0f2f5;
+    margin-top:9mm;
+    margin-bottom:9mm;
+}
